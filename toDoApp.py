@@ -4,18 +4,18 @@ tasks=[]
 
 def addtask(task) :
   tasks.append(task)
-  print("task added!")
+  print("Task added!")
 
 def showTasks( ):
     if len(tasks)==0 :
-      print("no tasks yet")
+      print("No tasks yet.")
     else:
      for i in range (len(tasks)):
       print(i+1,".",tasks[i])
 
 def removetask(tasknumber):
     tasks.pop(tasknumber) 
-    print("task removed!!")
+    print("Task removed!!")
 
 def main():
     print("======= Group 1 To-Do App =======")
