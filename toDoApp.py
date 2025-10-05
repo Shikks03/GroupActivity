@@ -1,17 +1,19 @@
 # toDoApp.py
 
 tasks=[]
+date=[]
 
-def addtask(task) :
-  tasks.append(task)
-  print("Task added!")
+def addtask(task, deadline) :
+    tasks.append(task)
+    date.append(deadline)
+    print("task and deadline added!")
 
 def showTasks( ):
     if len(tasks)==0 :
       print("No tasks yet.")
     else:
      for i in range (len(tasks)):
-      print(i+1,".",tasks[i])
+      print(i+1,".) ",tasks[i], " - ",date[i])
 
 def removetask(tasknumber):
     tasks.pop(tasknumber) 
