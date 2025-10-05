@@ -16,8 +16,12 @@ def showTasks( ):
       print(i+1,".) ",tasks[i], " - ",date[i])
 
 def removetask(tasknumber):
-    tasks.pop(tasknumber) 
-    print("Task removed!!")
+    if 0 <= tasknumber < len(tasks):
+        del tasks[tasknumber]
+        print("Task removed!")
+    else:
+       print("Tasks does not exist")
+
 
 def main():
     print("======= Group 1 To-Do App =======")
@@ -36,7 +40,7 @@ def main():
             showTasks()
         elif ch=="3":
             n=int(input("enter task no to remove: "))
-            removetask(n)   
+            removetask(n-1)   
         elif ch=="4":
             break
         else:
