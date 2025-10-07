@@ -106,7 +106,9 @@ Enter choice : 2
 ## 👨‍💻 Authors
 Developed by **Group 1** as a Python programming exercise.
 Members: 
+```
     Aganinta, Kyle Azriel
     Ganotisi, Bea Margaret
     Ipil, Shikkari Jerard
     Tuyay, John Benedict
+```
